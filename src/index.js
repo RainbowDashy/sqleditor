@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import 'ace-builds/src-noconflict/mode-sql'
+import 'ace-builds/src-noconflict/theme-github'
+import 'ace-builds/src-noconflict/ace'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

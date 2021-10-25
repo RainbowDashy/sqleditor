@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Tiny sql editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple sql editor. It can execute sql online and display the results.
+
+This project has a react frontend and a node server. The server is responsible of executing sql and return the result.
+
+## Development
+
+To run the app in development mode. Run the following commands.
+
+``` bash
+yarn start
+yarn server
+```
+
+This will run the react app on port 3000, and node server on port 3001. If you want to change the ports, they are defined in `/src/App.js` and `/index.js`, make sure to change them both.
+
+## Deployment
+
+Switch to branch deployment and follow `README.md`.
 
 ## Available Scripts
 
@@ -39,32 +56,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `yarn server`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Run the server in development mode. It will listen on port 3001 by default.

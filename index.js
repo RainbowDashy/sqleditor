@@ -4,7 +4,7 @@ const { open } = require('sqlite');
 const path = require('path');
 const compression = require('compression');
 const app = express();
-const port = process.env.PORT ?? 3001;
+const port = 3001;
 const isProduction = process.env.NODE_ENV === 'production';
 
 app.use(express.text());

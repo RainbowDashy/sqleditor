@@ -3,7 +3,7 @@ import AceEditor from 'react-ace';
 import { useState } from 'react';
 import defaultValue from './DefaultValue';
 
-const server = process.env.SERVER ?? "http://localhost:3001/execute";
+const server = "http://localhost:3001/execute";
 
 function Table({ rows }) {
   const headers = Object.keys(rows[0]);

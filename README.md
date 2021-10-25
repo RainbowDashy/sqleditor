@@ -2,7 +2,7 @@
 
 This is a simple sql editor. It can execute sql online and display the results.
 
-This project has a react frontend and a node server. The server is responsible of executing sql and return the result.
+This project has a react frontend and a node server. The server is responsible of executing sql and return the result. It supports sqlite only.
 
 ## Development
 

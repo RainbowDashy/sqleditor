@@ -6,18 +6,16 @@ This project has a react frontend and a node server. The server is responsible o
 
 ## Development
 
-To run the app in development mode. Run the following commands.
-
-``` bash
-yarn start
-yarn server
-```
-
-This will run the react app on port 3000, and node server on port 3001. If you want to change the ports, they are defined in `/src/App.js` and `/index.js`, make sure to change them both.
+Switch to branch master and follow `README.md`.
 
 ## Deployment
 
-Switch to branch deployment and follow `README.md`.
+Build and serve the app using the following.
+
+```bash
+yarn build
+yarn serve
+```
 
 ## Available Scripts
 
@@ -59,3 +57,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### `yarn server`
 
 Run the server in development mode. It will listen on port 3001 by default.
+
+### `yarn serve`
+
+Run in deployment mode. It will listen on port 3001 by default. You can run `PORT=3003 yarn serve` to start the server on port 3003 or whatever port you want.

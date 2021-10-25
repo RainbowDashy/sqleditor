@@ -4,7 +4,7 @@ const { open } = require('sqlite');
 const path = require('path');
 const compression = require('compression');
 const app = express();
-const port = 3001;
+const port = process.env.PORT ?? 3001;
 const isProduction = process.env.NODE_ENV === 'production';
 
 app.use(express.text());
@@ -41,8 +41,6 @@ app.post('/execute', async (req, res) => {
     error = err.message;
   }
 
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'POST');
   res.json({ success, result: output, error });
 })
 

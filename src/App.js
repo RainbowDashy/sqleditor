@@ -3,7 +3,6 @@ import AceEditor from 'react-ace';
 import { useState } from 'react';
 import defaultValue from './DefaultValue';
 
-const server = "http://localhost:3001/execute";
 
 function Table({ rows }) {
   const headers = Object.keys(rows[0]);
@@ -40,10 +39,9 @@ function App() {
   }
 
   const handleExecute = () => {
-    fetch(server, {
+    fetch('/execute', {
       body: code,
       method: 'POST',
-      mode: "cors",
     })
       .then(res => res.json())
       .then((res) => {
